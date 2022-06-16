@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Slayer</title>
+    <link rel="shortcut icon" href="imagens/doom_guy.png" >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site construído como projeto da disciplina de Introdução à Web">
+    <meta name="keywords" content="doom, slayer, eternal">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="Plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="Plugins/magnific-popup.css">
+    <script src="Plugins/jquery.min.js"></script>
+    <script src="Plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/jquery.magnific-popup.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+    mode:'fade',
+    captions: true,
+    slidewidth: 800,
+    auto: true,
+    pager: true,
+    controls:true,
+
+      });
+      
+      $('#galeria-fotos').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('title');
+			}
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, 
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+		
+	});
+    });
+
+    
+  </script>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div>
+            <img src="imagens/doom_title.png" id="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="internas/historia.html">História</a></li>
+                    <li><a href="internas/inimigos.html">Inimigos</a></li>
+                    <li><a href="internas/musica.html">Músicas</a></li>
+                    <li><a href="internas/personagens.html">Personagens</a></li>
+                    <li><a href="internas/curiosidades.html">curiosidades</a></li>
+                    <li><a href="https://bethesda.net/pt/game/doom" target="_blank">Site oficial</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="banners">
+        <div class="container">
+            <ul class="slider">
+                <li><img src="imagens/banners/banner_doom01.jpg"></li>
+                <li><img src="imagens/banners/banner_doom02.jpg"></li>
+                <li><img src="imagens/banners/banner_doom03.jpg"></li>
+                <li><img src="imagens/banners/banner_doom04.jpg"></li>
+                <li><img src="imagens/banners/banner_doom05.jpg"></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="versoes">
+        <div class="container">
+            <h2 class="titulo-secao">Personagens principais</h2>
+            <div id="modelos">
+                <div>
+                    <img src="imagens/Personagens/slayer.png">
+                    <h3>Slayer</h3>
+                    <ul>
+                        <li>Personagem principal do jogo Doom Doomguy (também conhecido como Doom Slayer, Doom Marine, Unchained Predator, Marine, Hell Walker, etc) é o protagonista dos jogos da série Doom criada pela ID Software. </li>
+                    </ul>
+                    <a href="internas/personagens.html" class="but-saiba-mais">Saiba mais</a>
+                </div>
+                <div>
+                    <img src="imagens/Personagens/hayden.png">
+                    <h3>Samuel Hayden</h3>
+                    <ul>
+                        <li>Personagem central do jogo Doom O Dr. Samuel Hayden é um dos personagens centrais da história de Doom 2016. Ele é um oficial de alto escalão da UAC e sua função era supervisionar os projetos de pesquisa sobre energia em Argent, na Base de Marte.Depois de um incidente misterioso durante a construção da Torre Argent</li>
+                    </ul>
+                    <a href="internas/personagens.html" class="but-saiba-mais">Saiba mais</a>
+                </div>
+                <div>
+                    <img src="imagens/Personagens/vega.jpg">
+                    <h3>VEGA</h3>
+                    <ul>
+                        <li>VEGA é a inteligência Artificial responsável pelas operações das bases da UAC, em Marte. Ela tem grande importância no jogo e, junto com Samuel Hayden, guia Doomguy em sua campanha no jogo de 2016. Controle Total e Consciente A Inteligência Artificial VEGA foi desenvolvida por Samuel Hayden para controlar as instalações da UAC em Marte</li>
+                    </ul>
+                    <a href="internas/personagens.html" class="but-saiba-mais">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fotos">
+        <div class="container">
+            <h2 class="titulo-secao">Gráficos de tirar o fôlego</h2>
+            <div id="galeria-fotos">
+                <a href="imagens/fotos/fotosg/doom.jpg" title="doom"><img src="imagens/fotos/fotosp/doom.jpg" alt=""></a>
+                <a href="imagens/fotos/fotosg/samuel_hayden.jpg" title="samuel_hayden"><img src="imagens/fotos/fotosp/samuel_hayden.jpg" alt=""></a>
+                <a href="imagens/fotos/fotosg/traje.jpg" title="traje"><img src="imagens/fotos/fotosp/traje.jpg" alt=""></a>
+                <a href="imagens/fotos/fotosg/uac.jpg" title="uac"><img src="imagens/fotos/fotosp/uac.jpg" alt=""></a>
+                <a href="imagens/fotos/fotosg/vega_inteligencia_artificial.jpg" title="vega_inteligencia_artificial"><img src="imagens/fotos/fotosp/vega_inteligencia_artificial.jpg" alt=""></a>
+                <a href="imagens/fotos/fotosg/cenario01.png" title="cenario01"><img src="imagens/fotos/fotosp/cenario01.png" alt=""></a>
+                <a href="imagens/fotos/fotosg/cenario02.jpg" title="cenario02"><img src="imagens/fotos/fotosp/cenario02.jpg" alt=""></a>
+                <a href="imagens/fotos/fotosg/cenario03.jpg" title="cenario03"><img src="imagens/fotos/fotosp/cenario03.jpg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="video">
+        <div class="container">
+            <h2 class="titulo-secao">Gameplay brutal!</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zUSMHRaO7Jo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer id="rodape">
+        <p>Projeto da disciplina de Introdução a Tecnologia Web da faculdade UniRios
+</body>
+
+</html>
